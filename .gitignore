@@ -1,0 +1,8 @@
+/data
+/data/db
+data/db/pg_hba.conf
+data/db/pg_ident.conf
+data/db/PG_VERSION
+data/db/postgresql.auto.conf
+data/db/postgresql.conf
+data/db/postmaster.opts

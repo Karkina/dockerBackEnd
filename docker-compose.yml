@@ -1,5 +1,5 @@
-version: "3.9"
-   
+version: "3.3"
+
 services:
   db:
     image: postgres
@@ -19,5 +19,6 @@ services:
       - POSTGRES_NAME=postgres
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
+    #command: bash -c "python manage.py refreshStock"
     depends_on:
       - db

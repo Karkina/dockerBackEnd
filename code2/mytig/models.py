@@ -2,6 +2,7 @@ from django.db import models
 
 # Create your models here.
 class ProduitEnPromotion(models.Model):
+    id = models.AutoField(primary_key=True, **options)
     created = models.DateTimeField(auto_now_add=True)
     tigID = models.IntegerField(default='-1')
 
@@ -9,6 +10,7 @@ class ProduitEnPromotion(models.Model):
         ordering = ('tigID',)
 
 class ProduitIsAvaible(models.Model):
+    id = models.AutoField(primary_key=True, **options)
     created = models.DateTimeField(auto_now_add=True)
     tigID = models.IntegerField(default='-1')
 
@@ -16,6 +18,7 @@ class ProduitIsAvaible(models.Model):
         ordering = ('tigID',)
 
 class ProduitStock(models.Model):
+    id = models.AutoField(primary_key=True, **options)
     created = models.DateTimeField(auto_now_add=True)
     tigID = models.IntegerField(default='-1')
     inStock = models.IntegerField(default='-1')
@@ -26,6 +29,7 @@ class ProduitStock(models.Model):
         ordering = ('tigID',)
 
 class ProduitInSale(models.Model):
+    id = models.AutoField(primary_key=True, **options)
     created = models.DateTimeField(auto_now_add=True)
     tigID = models.IntegerField(default='-1')
 
@@ -33,6 +37,7 @@ class ProduitInSale(models.Model):
         ordering = ('tigID',)
 
 class ProduitTransaction(models.Model):
+    id = models.AutoField(primary_key=True, **options)
     created = models.DateTimeField(auto_now_add=True)
     tigID = models.IntegerField(default=-1)
     transactionPrice = models.FloatField(default=0.0)
